@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<% import web.py %>
+<html>
+	<head>
+		<title> FixTUES </title>
+	</head>
+	<body>
+	<h1> Hello World! </h1>
+
+<table style="width:80%; border: solid;" cellpadding="1" cellspacing="1" border="4">
+   <tr>
+       <td>Номер</td>
+         <th colspan="4" align="center">EVENTS LIST</th>
+    </tr>
+    <tr>
+         <td>Номер</td>
+         <td>Дата</td>
+         <td>Заглавие</td>
+         <td>Статус</td>
+         <td>Действие</td>
+    </tr>
+{% for i in range(1,10) %}
+    <tr>
+         <td>{{ i }}</td>
+         <td>1.03.2019</td>
+         <td>Заглавие</td>
+         <td>Статус</td>
+         <td><a href="#" >check</a> <a href="#" >edit</a> <a href="#" >del</a></td>
+    </tr>
+{% endfor %}
+
+</table>
+
+
+<ul>
+    <li><a href="http://www.cnn.com" target="_blank">{% print("adff")%}</a></li>
+    <li>bbb</li>
+</ul>
+    </body>
+</html>
