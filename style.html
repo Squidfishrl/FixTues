@@ -20,16 +20,28 @@
             button {
                 border: 1px solid #4CAF50;
                 background-color: Transparent;
-                color: white;
+                color: #dbddbe;
                 font-size: 20px;
                 padding: 10px 35px;
                 border-radius: 10px;
-                -webkit-transition-duration: 0.4s;
-                transition-duration: 0.4s;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                font-family: "monospace", Times, serif, Arial;
             }
             button:hover {
-                background-color: lightgreen;
-                color: black;
+                background-color: #9ec639;
+                color: #000000;
+                font-family: "monospace", Times, serif, Arial;
+            }
+            #topright {
+                position: absolute;
+                top: 10px;
+                right: 133px;
+            }
+            #lessright {
+                position: absolute;
+                top: 10px;
+                right: 10px;
             }
         </style>
     </head>
@@ -37,23 +49,22 @@
         <table>
             <tr>
                 <td>
-                    <button onclick="незнам">Начало</button>
+                    <button onclick="Чакам">Начало</button>
                 </td>
                 <td>
-                    <button onclick="незнам">Незнам?</button>
-
+                    <button onclick="Ясен">Повече за проекта</button>
                 </td>
                 <td>
-                    <button onclick="проблем">Проблеми?</button>
+                    <button onclick="да">Виж проблеми</button>
                 </td>
                 <td>
-                    <button onclick="линк">нз</button>
+                    <button onclick="Направи">Запиши проблем</button>
                 </td>
                 <td>
-                    <button onclick="асд'">НеЗнАм</button>
+                    <button onclick="Rout-ове" id="topright">Регистрация</button>
                 </td>
                 <td>
-                    <button onclick="window.location.href='/blog'">Blog</button>
+                    <button onclick="Акростих" id="lessright">Вход</button>
                 </td>
             </tr>
         </table>
