@@ -7,7 +7,11 @@
         <style media="screen">
             * {box-sizing: border-box;}
             body {
-                background-color: white;
+                background-image: url("https://cdn1.editmysite.com/uploads/4/7/5/0/47507813/background-images/1695553096.jpg");
+                background-repeat: none;
+                background-size: cover;
+                background-attachment: fixed;
+
                 margin: 0;
                 font-family: Arial, Helvetica, sans-serif;
           }
@@ -61,7 +65,13 @@
                     float: none;
                 }
             }
-
+            .text {
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                right: 20%;
+                background-color: rgba(56,55,55,0.5);
+            }
             h1 {
                 font-family: Times New Roman, Times, serif;
                 font-size: 220%;
@@ -73,34 +83,45 @@
             }
 
             button {
-                top: 0.3%;
+                top: 0.5%;
                 border: 1px solid #083cad;
                 background-color: Transparent;
                 color: white;
                 border-radius: 10px;
-                -webkit-transition-duration: 0.5s;
-                transition-duration: 0.5s;
+                -webkit-transition-duration: 1s;
+                transition-duration: 1s;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
             }
 
             button:hover {
-                background-color: #4375e0;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 20px 100px 0 rgba(0,0,0,0.19);
+                background-color: #1548b5;
                 color: #000000;
             }
 
             #topright {
                 position: absolute;
-                right: 5.2%;
+                top: 3%;
+                right: 15.2%;
             }
 
             #lesstopright {
                 position: absolute;
-                right: 0.5%;
+                top: 3%;
+                right: 10.5%;
             }
-
+            #moretop {
+                position: absolute;
+                top: 5%;
+                right: 2%;
+            }
       </style>
   </head>
     <body>
-        <div class="buttons">
+        <div class="header">
+            <a href="https://www.elsys-bg.org/" title="ТУЕС">
+                <img src="https://www.elsys-bg.org/web/images/logo.svg" alt="ТУЕС" data-image="https://www.elsys-bg.org/web/images/logo.svg">
+            </a>
             <table>
                 <tr>
                     <td>
@@ -140,16 +161,17 @@
                     </td>
                 </tr>
             </table>
-        </div>
-        <div class="header">
-            <a href="https://www.elsys-bg.org/" title="ТУЕС">
-                <img src="https://www.elsys-bg.org/web/images/logo.svg" alt="ТУЕС" data-image="https://www.elsys-bg.org/web/images/logo.svg">
-            </a>
            <div class="header-right">
               <h1>
-                <i><b>FixTUES</b></i>
+                <i><b><img id=moretop src="FixTues1.jpg" alt="FixTues"></b></i>
               </h1>
             </div>
+        </div>
+        <div class="text">
+            <p>KON</p>
+            <p>Bob</p>
+            <p>qde</p><p>ama</p><p>leshta</p><p>ne</p><p>pase</p><p>i</p><p>lain</p><p>see</p><p>qdeqde</p><p>qdeqds</p><p>qde</p><p>qde</p><p>qde</p><p>qde</p>
+            <p>asdasd</p><p>povche redowe</p><p>ura</p><p>Kolkoto poveche</p><p>Tolkowa poweche</p><p>Kazal mechu puh</p><p>i umrql ot swruh doza</p><p>hehehe</p>
         </div>
     </body>
 <html>
