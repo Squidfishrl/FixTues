@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Последни сигнали{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<div class="box">
+    <button id="event_button" onclick="window.location.href='/new_event'">
+        <h2>Подай сигнал</h2>
+    </button>
+</div>
+<div class="text">
+    <table id="database">
+        <tr>
+            <td>date</td>
+            <td>title</td>
+            <td>status</td>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row['date'] }}</td>
+            <td>{{ row['title'] }}</td>
+            <td>{{ row['status'] }}</td>
+            <td>
+                <form action="/delete" method="POST">
+                    <input type="hidden" name="delete" value="{{ row['id'] }}"/>
+                    <input id="delete" type="submit" value="Delete"/>
+                </form>
+            </td>
+            <td>
+                <button id="edit" onclick="window.location.href='/update_event'">Edit</button>
+            </td>
+        {% endfor %}
+    </table>
+</div>
+{% endblock content %}
+</body>
+</html>
