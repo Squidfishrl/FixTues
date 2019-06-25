@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<% import web.py %>
-<html>
-	<head>
-		<title> FixTUES </title>
-	</head>
-	<body>
-	<h1> Hello World! </h1>
-
-<table style="width:80%; border: solid;" cellpadding="1" cellspacing="1" border="4">
-   <tr>
-       <td>Номер</td>
-         <th colspan="4" align="center">EVENTS LIST</th>
-    </tr>
-    <tr>
-         <td>Номер</td>
-         <td>Дата</td>
-         <td>Заглавие</td>
-         <td>Статус</td>
-         <td>Действие</td>
-    </tr>
-{% for i in range(1,10) %}
-    <tr>
-         <td>{{ i }}</td>
-         <td>1.03.2019</td>
-         <td>Заглавие</td>
-         <td>Статус</td>
-         <td><a href="#" >check</a> <a href="#" >edit</a> <a href="#" >del</a></td>
-    </tr>
-{% endfor %}
-
-</table>
-
-
-<ul>
-    <li><a href="http://www.cnn.com" target="_blank">{% print("adff")%}</a></li>
-    <li>bbb</li>
-</ul>
-    </body>
+{% extends "layout.html" %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}FixTUES{% endblock %}</title>
+    <style>
+        h3 {
+            font-family: Times New Roman, Times, serif;
+            font-size: 200%;
+            text-align: center;
+            margin-top: 8%;
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <h1>Добре дошли на сайта на FixTUES!</h1>
+    <h3>Нека да работим заедно за по-уютно място, където да учим!</h3>
+    <i><img alt="CROSSED HANDS" id="hands" src="https://cdn.discordapp.com/attachments/558266683790327813/592716868301750282/together.png"></i>
+    <p id="about_text">
+        Въпреки че трябва всеки сам да носи своя кръст и да се справя с проблемите си, в ТУЕС всички сме едно голямо семейство и като такова<br/>
+        трябва да си помагаме! Няма хора без проблеми, а ТУЕС е цяла общност. В ТУЕС има някои проблеми, с които всички се сблъскваме<br/>
+        ежедневно. Идеята на този сайт е ние, учениците, да можем като едно цяло да действаме, за да се справяме с тези проблеми в нашето<br/>
+        училище. Добър пример за такъв проблем е състоянието на тоалетните в ТУЕС. Не знаем колко би струвал един такъв ремонт, но ако<br/>
+        учениците си разделят цената поравно, за тях няма да е особено скъпо. Разбира се, никой няма да бъде насилен да плаща за нещо, което.<br/>
+        не желае Най-важното е учениците да се чувстват като у дома си в училище, защото както всички знаем - туесарите прекарват немалко време там.<br/>
+    </p>
+</div>
+<div class="rights">
+    <p style="margin-left: 10%;">
+        FixTUES © &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019 - 2019<br/>
+        <br/>
+        <br/>
+        All rights reserved &nbsp;&nbsp;&nbsp;&nbsp; ( ͡° ͜ʖ ͡°)
+    </p>
+</div>
+{% endblock content %}
+</body>
 </html>

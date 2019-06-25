@@ -19,56 +19,46 @@
         function topFunction() {
           document.documentElement.scrollTop = 0;
         }
-
-
-
     </script>
 </head>
 <body>
 
 <div class="header">
     <a href="https://www.elsys-bg.org/" id=elsys title="ТУЕС" target="_blank">
-        <img alt="ТУЕС" data-image="https://www.elsys-bg.org/web/images/logo.svg"
+        <img alt="ТУЕС"
+             data-image="https://www.elsys-bg.org/web/images/logo.svg"
              src="https://www.elsys-bg.org/web/images/logo.svg">
     </a>
 
-    <table>
-        <tr>
-            <td>
-                <button class="header_button" onclick="window.location.href='/'">
-                    <h2>Начало</h2>
-                </button>
-            </td>
-            <td>
-                <button class="header_button" onclick="window.location.href='/about'">
-                    <h2>За нас</h2>
-                </button>
-            </td>
-            <td>
-                <button class="header_button" onclick="window.location.href='/events'">
-                    <h2>Сигнали</h2>
-                </button>
-            </td>
-            <td>
-                <button class="header_button" onclick="window.location.href='/register'">
-                    <h2>Регистрация</h2>
-                </button>
-            </td>
-            <td>
-                <button class="header_button" onclick="window.location.href='/login'">
-                    <h2>Вход</h2>
-                </button>
-            </td>
-        </tr>
-    </table>
+    <button class="header_button" onclick="window.location.href='/'">
+        <h2>Начало</h2>
+    </button>
+
+    <button class="header_button" onclick="window.location.href='/about'">
+        <h2>За нас</h2>
+    </button>
+
+    <button class="header_button" onclick="window.location.href='/events'">
+        <h2>Сигнали</h2>
+    </button>
+
+    <button class="header_button" onclick="window.location.href='/register'">
+        <h2>Регистрация</h2>
+    </button>
+
+    <button class="header_button" onclick="window.location.href='/login'">
+        <h2>Вход</h2>
+    </button>
+
     <h1>
-        <i><b><img alt="FixTues"
-                   id=logo
-                   src="https://cdn.discordapp.com/attachments/558266683790327813/578980656944513036/FixTues2_cut.png"></b></i>
+        <i><img alt="FixTues"
+                   id="logo"
+                   src="https://cdn.discordapp.com/attachments/558266683790327813/578980656944513036/FixTues2_cut.png"></i>
     </h1>
 </div>
-<button id="scroll_button" onclick="topFunction()"><b>Back to top</b></button>
-
+<button id="scroll_button" onclick="topFunction()">
+    <b>Back to top</b>
+</button>
 {% block content %}
 {% endblock content %}
 </body>

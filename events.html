@@ -7,17 +7,15 @@
 </head>
 <body>
 {% block content %}
-<div class="box">
+<div class="text">
     <button id="event_button" onclick="window.location.href='/new_event'">
         <h2>Подай сигнал</h2>
     </button>
-</div>
-<div class="text">
     <table id="database">
         <tr>
-            <td>date</td>
-            <td>title</td>
-            <td>status</td>
+            <td class="db_columns"><b>Date and Time</b></td>
+            <td class="db_columns"><b>Title</b></td>
+            <td class="db_columns"><b>Status</b></td>
         </tr>
         {% for row in rows %}
         <tr>
@@ -31,10 +29,17 @@
                 </form>
             </td>
             <td>
-                <button id="edit" onclick="window.location.href='/update_event'">Edit</button>
+                <button id="edit" onclick="window.location.href='/update_event'">
+                    Edit
+                </button>
             </td>
+        </tr>
         {% endfor %}
     </table>
+    <p id="above_event_button">
+        <br>Видял си проблем,</br>
+        <br>който трябва да бъде оправен?</br>
+    </p>
 </div>
 {% endblock content %}
 </body>

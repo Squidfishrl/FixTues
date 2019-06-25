@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирай сигнал</title>
+</head>
+<body>
+{% for row in rows %}
+<form action="/update" method="POST">
+    <input type="text" name="update" value="{{ row['id'] }}"/>
+</form>
+{% endfor %}
+<form>
+    <div>
+        <span>Update Title</span>
+        <input name="title" type="text" value="sdsdd"/>
+    </div>
+    <div>
+        <span>Update Status</span>
+        <input name="status" type="text" value="bla"/>
+    </div>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

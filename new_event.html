@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Подай сигнал</title>
+    <style>
+        .text {
+            position: absolute;
+            top: 15%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            background-color: rgba(255,255,255,0.9);
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <form action="/submit" method="POST">
+        <div id="title">
+            <span>Заглавие</span>
+            <input id="title_box" name="title" type="text"/>
+        </div>
+        <div id="status">
+            <span>Status</span>
+            <input id="status_box" name="status" type="text"/>
+        </div>
+        <input id="submit_event" type="submit" value="Submit">
+        <input id="cancel_event" type="button" value="Cancel" onClick="javascript:history.go(-1)" />
+    </form>
+</div>
+{% endblock content %}
+</body>
+</html>

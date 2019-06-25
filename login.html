@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function alertBox() {
+            alert("WIP");
+            window.location.assign("/")
+        }
+    </script>
+</head>
+<body>
+<div class="text">
+
+    <table id="register_table">
+
+        <tr>
+            <td class="register_column">
+                <span><b>Username:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="text" name="username" placeholder="username...">
+            </td>
+        </tr>
+        <tr>
+            <td class="register_column">
+                <span><b>Password:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="password" name="password" placeholder="password...">
+            </td>
+        </tr>
+
+    </table>
+    <input id="submit_registration_and_login_button" type="submit" value="Вход" onclick="alertBox()">
+</div>
+</body>
+{% endblock content %}
+</html>

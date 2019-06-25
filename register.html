@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function alertBox() {
+            alert("WIP");
+            window.location.assign("/")
+        }
+
+    </script>
+</head>
+<body>
+<div class="text">
+    <h1>СТАНИ ЧАСТ ОТ ОТБОРА</h1>
+    <table id="register_table">
+
+        <tr>
+            <td class="register_column">
+                <span><b>Име:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="text" name="first name" placeholder="име...">
+            </td>
+        </tr>
+        <tr>
+            <td class="register_column">
+                <span><b>Фамилия:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="text" name="last name" placeholder="фамилия...">
+            </td>
+        </tr>
+        <tr>
+            <td class="register_column">
+                <span><b>Username:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="text" name="username" placeholder="username...">
+            </td>
+        </tr>
+        <tr>
+            <td class="register_column">
+                <span><b>Password:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="password" name="password" placeholder="password...">
+            </td>
+        </tr>
+        <tr>
+            <td class="register_column">
+                <label><b>Училище:</b></label>
+            </td>
+            <td class="register_column">
+                <select id="school" name="училище">
+                    <option value="Не е Туес" onclick="document.getElementById('class').style.display='none'">
+                        Не е Туес
+                    </option>
+                    <option value="Туес" onclick="document.getElementById('class').style.display='contents'">
+                        Туес
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr id="class" style="display: none;">
+            <td class="register_column">
+                <span><b>Клас:</b></span>
+            </td>
+            <td class="register_column">
+                <input class="textbox" type="text" name="class" placeholder="клас...">
+            </td>
+        </tr>
+    </table>
+    <input id="submit_registration_button" type="submit" value="Регистрирай се" onclick="alertBox()">
+</div>
+</body>
+{% endblock content %}
+</html>
